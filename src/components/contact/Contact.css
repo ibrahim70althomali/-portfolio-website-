@@ -1,0 +1,108 @@
+.icon-envelope{
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+.Contact .title{
+    font-size: 3.1rem;
+    color: var(--title);
+   margin-bottom: 1rem;
+}
+.Contact .sub-title{
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.65rem;
+}
+.Contact label{
+    color: var(--subtitle);
+}
+.Contact #message ,.Contact #Email{
+    all:unset;
+    background-color: rgba(63,63,70,0.15);
+    border: 1px solid rgb(63 ,63 ,70);
+    width: 17rem; 
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1rem;
+} 
+.light .Contact #message ,.light .Contact #Email{
+    background-color: #e7e2e28e;
+    color: #000;
+    border:  1px solid rgba(128, 128, 128, 0.451);
+}
+.Contact #message:focus ,.Contact #Email:focus{
+    /* border: 1px solid rgb(45 ,212 ,191); */
+    border: 1px solid  var(--g);
+}
+.Contact #message:hover ,.Contact #Email:hover{
+    /* border: 1px solid rgb(45 ,212 ,191); */
+    border: 1px solid  var(--g);
+}
+.Contact #message{
+    height: 270px;
+}
+.Submit{
+    margin-top: 22px;
+    background-color: rgba(36, 37, 46, 1);
+    padding: 0.75rem 2rem;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: 0.3s;
+   
+}
+
+.Submit:hover{
+    opacity: 1;
+
+}
+.light .Submit:hover{
+    opacity: 1;
+}
+ .CONanimation{
+    width: 100%;
+    margin: 2px  66px 220px;
+    
+ }
+
+
+
+
+@media (max-width: 700px) {
+  .animation{display: none;}
+
+
+  .form{
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+}
+.form div.flex{
+  flex-direction: column;
+  align-items: start;
+}
+.Contact #message ,.Contact #Email{
+
+ width: 100%;
+ margin-left:  0;
+ padding: 0.5rem 0;
+ margin-top: 1rem;
+
+}
+.Submit{
+width: 40%;
+align-self: center;
+}
+}
+
+
+/*emaliAnimation*/
+@media (max-width: 1200px) {
+.animation {
+display: none;
+}
+}

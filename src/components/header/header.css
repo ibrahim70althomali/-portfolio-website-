@@ -1,0 +1,196 @@
+/* =============
+ table of contents
+===============
+ 
+1. header Design
+2. modal == pop up
+3. Button & icon
+4.  Responsive (media query)
+ 
+*/
+ 
+ 
+ 
+ 
+/* ===============
+   1. header Design
+================ */
+
+
+
+
+
+
+
+
+
+
+header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+.hh{
+    color:rgb(243, 241, 241);
+}
+.light .hh{
+    color: rgb(11, 11, 11);
+}
+
+/* header ul {
+    gap: 16px;
+}
+
+header ul li a {
+    color: var(--subtitlee);
+    font-size: 0.88rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: var(--g);
+    font-size: 0.9rem;
+    opacity: 1;
+
+} */
+
+header button {
+    font-size: 1.4rem;
+}
+
+
+header nav {
+    background-color: var(--bgheader);
+    padding: 1rem 2rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 12px rgba(187, 188, 185, 0.445);
+}
+
+
+header .menu {
+    display: none;
+}
+
+
+/* ===============
+    2.modal == pop up
+================ */
+.flexd {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 0.91);
+    z-index: 99;
+}
+
+
+
+@keyframes mymove{
+     0%{scale: 0;}
+     60%{scale: 1.2;}
+     100%{scale: 1;}
+}
+
+.flexd ul.list {
+    animation: mymove   0.7s 1;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: var(--secndary);
+}
+
+.flexd ul.list li {
+    padding-top: 1rem;
+    padding-bottom: 0.66rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.flexd ul.list li:last-child {
+    border: none;
+}
+
+.flexd ul.list li a {
+    font-size: 1rem;
+}
+
+
+
+
+.flexd ul.list li:first-child {
+    text-align: right;
+    border: none;
+    padding-top: 0, 2;
+    padding-bottom: 0rem;
+  
+}
+
+
+/* ===============
+   3. Button & icon
+================ */
+.modle ,.icon-menu{
+    background-color: var(--bgheader);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    color: var(--subtitle);
+    border: 1px solid var(--g);
+    transition: 0.2ms;
+}
+.modle:hover ,.icon-menu:hover{
+    color:var(--g);
+    border: 1px solid var(--g); 
+}
+
+
+
+.light .modle {
+    border: 1px solid #f6f630;
+    background-color: rgba(128, 126, 126, 0.338);
+}
+
+.light .modle:hover,.icon-menu:hover{
+border: 1px solid #f6f630;
+color: #f6f630;
+}
+
+
+
+.icon-cross1{
+    background-color: var(--bgheader);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    color: var(--subtitle);
+    border: 1px solid var(--g);
+    transition: 0.2ms;
+    font-size: 1.5rem;
+}
+.icon-cross1:hover{
+    color:var(--g);
+    border: 1px solid var(--g); 
+}
+
+/* ===============
+4.  Responsive (media query)
+================ */
+@media(max-width : 600px) {
+    header .menu {
+        display: block;
+    }
+
+    header.flex nav {
+        display: none;
+    }
+
+}

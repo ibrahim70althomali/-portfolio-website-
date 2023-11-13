@@ -1,0 +1,29 @@
+.pp{
+display: flex;
+justify-content: space-between;
+margin-bottom: 2rem;
+color: var(--subtitlee);
+font-size: 1.2rem;
+font-weight: bold;
+}
+.light .pp{
+    color: #0000003c;
+}
+.pp span{
+    color: var(--titlee);
+}
+.light .pp span{
+    color: #000;
+}
+@media (max-width: 700px) {
+
+    .pp{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: normal;
+
+    }
+}
